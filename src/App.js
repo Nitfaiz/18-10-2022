@@ -1,4 +1,5 @@
 import "./App.css";
+import { useEffect, useState } from "react";
 import SideBar from "./components/Sidebar/SideBar";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 
@@ -11,13 +12,25 @@ import Order from "./pages/Order";
 import Saved from "./pages/Saved";
 import Setting from "./pages/Setting";
 import CustomerData from "./components/CustomerData";
+import ContactForm from "./components/ContactForm";
+import Login from "./components/Login";
+import Signup from "./components/Signup";
+import "./components/css/formStyle.css";
 // import Forms from "./components/Form";
 function App() {
+  const [isUserLogin, setUserLogin] = useState(localStorage.getItem("isLogin") == "true" ? true : false);
+  useEffect(() => {
+    const isLogin = localStorage.getItem("isLogin") == "true" ? true : false;
+    setUserLogin(isLogin)
+  }, localStorage.getItem("isLogin"))
   return (
-    <Router>
-      <SideBar>
+    <div style={{display: isUserLogin ? "flex" : "grid"}}>
+      <Router>
+        { isUserLogin && <SideBar />}
         <Routes>
-          <Route path="/" element={<Dashboard />} />
+          <Route path="/dashboard" element={<Dashboard />} />
+          <Route path="/login" element={<Login />} />
+          <Route path="/signup" element={<Signup />} />
           <Route path="/users" element={<Users />} />
           <Route path="/messages" element={<Messages />} />
           <Route path="/analytics" element={<Analytics />} />
@@ -27,13 +40,14 @@ function App() {
           <Route path="/settings" element={<Setting />} />
           {/* <Route path="/form" element={<Forms />} /> */}
 
-          <Route path="/sales/customer" element={<CustomerData />} />
+          <Route path="/sales/customer" element={<ContactForm />} />
 
 
-          <Route path="*" element={<> not found</>} />
+          <Route path="*" element={isUserLogin ? "not found" : <Login />} />
         </Routes>
-      </SideBar>
-    </Router>
+
+      </Router>
+    </div>
   );
 }
 

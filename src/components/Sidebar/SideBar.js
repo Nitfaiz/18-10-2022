@@ -1,13 +1,13 @@
 import { NavLink } from "react-router-dom";
 import { FaBars, FaHome, FaLock, FaMoneyBill, FaUser } from "react-icons/fa";
-import {MdSmsFailed,MdEmail} from "react-icons/md";
-import {  BiSearch } from "react-icons/bi";
-import { RiMastercardFill,RiAccountCircleFill} from "react-icons/ri";
+import { MdSmsFailed, MdEmail } from "react-icons/md";
+import { BiSearch } from "react-icons/bi";
+import { RiMastercardFill, RiAccountCircleFill } from "react-icons/ri";
 import { SiCampaignmonitor } from "react-icons/si";
-import {SiPostman} from "react-icons/si"
+import { SiPostman } from "react-icons/si"
 
 import { AiFillHeart, AiTwotoneFileExclamation } from "react-icons/ai";
-import { BsCartCheck,BsGraphUp ,BsWhatsapp,BsTelegram} from "react-icons/bs";
+import { BsCartCheck, BsGraphUp, BsWhatsapp, BsTelegram } from "react-icons/bs";
 import { useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import SidebarMenu from "./SidebarMenu";
@@ -20,13 +20,13 @@ const routes = [
   {
     path: "/sales",
     name: "Sales",
-    icon: <BsGraphUp/>,
+    icon: <BsGraphUp />,
 
     subRoutes: [
       {
         path: "/sales/customer",
         name: "Customer +",
-        icon: <SiPostman/>,
+        icon: <SiPostman />,
       },
       {
         path: "/sales/lead",
@@ -38,7 +38,7 @@ const routes = [
   {
     path: "/admin",
     name: "Admin",
-    icon: <FaUser/>,
+    icon: <FaUser />,
 
     subRoutes: [
       {
@@ -62,7 +62,7 @@ const routes = [
       {
         path: "/campaign/email",
         name: "Email",
-        icon: <MdEmail/>,
+        icon: <MdEmail />,
       },
       {
         path: "/campaign/whatsapp",
@@ -77,7 +77,7 @@ const routes = [
       {
         path: "/campaign/sms",
         name: "SMS",
-        icon: <MdSmsFailed/>,
+        icon: <MdSmsFailed />,
       },
     ],
   },
@@ -85,7 +85,7 @@ const routes = [
     path: "/report",
     name: "Report",
     icon: <AiTwotoneFileExclamation />,
-   
+
   },
   {
     path: "/logout",
@@ -97,7 +97,7 @@ const routes = [
   //   name: "Settings",
   //   icon: <BiCog />,
   //   exact: true,
-   
+
   // },
   // {
   //   path: "/saved",
@@ -144,7 +144,7 @@ const SideBar = ({ children }) => {
   };
 
   let elm = {
-    height:"37px",
+    height: "37px",
     // height: "40px",
     //  marginLeft : "-10px"
   }
@@ -177,7 +177,7 @@ const SideBar = ({ children }) => {
                 >
                   {/* <b>NIT INFOTECH</b> */}
 
-                  <img src='https://www.nit-infotech.com/wp-content/uploads/2020/03/nit-infotech.png' alt="errror" style={elm}/>
+                  <img src='https://www.nit-infotech.com/wp-content/uploads/2020/03/nit-infotech.png' alt="errror" style={elm} />
 
                 </motion.h1>
               )}
