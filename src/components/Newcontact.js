@@ -367,18 +367,18 @@ export default class Newcontact extends Component {
 
 <Form className='problem' onSubmit={this.handlesubmit}>
 
-     <Row>
+     <Row >
               <h3 className="text-primary">Contact Information</h3>
         <Row className="w-100 p-3" >
 
-                <Col className='col-1 '>
+                <Col className='col-3 '>
         {/* <TextField id="fullName" label="Owner Name" /> */}
 
         <TextField id="outlined-basic"  variant="outlined" label="Contct Owner"
         input type="text"  value={this.state.Contact_Owner} onChange={this.handleusernameA} required   />    
                 </Col>
 
-                <Col className='col-1'>
+                <Col className='col-3'>
 
                   < TextField id="outlined-basic"  variant="outlined" label="Lead Source"   input type="text"  value={this.state.Lead_Source} onChange={this.handleusernameB} required />
                 </Col>
@@ -387,12 +387,12 @@ export default class Newcontact extends Component {
 
 
         <Row className="w-100 p-3" >
-                <Col className='col-1'>
+                <Col className='col-3'>
                  
                   <TextField id="outlined-basic"  variant="outlined" label="First Name" input type="text"  value={this.state.First_Name} onChange={this.handleusernameC} required />
                 </Col>
 
-                <Col className='col-1'>
+                <Col className='col-3'>
                   <TextField id="outlined-basic"  variant="outlined" label="Last Name" input type="text"  value={this.state.Last_Name} onChange={this.handleusernameD} required />
 
                 </Col>
@@ -400,23 +400,23 @@ export default class Newcontact extends Component {
 
 
          <Row className="w-100 p-3" >
-                <Col className='col-1'>
+                <Col className='col-3'>
                 
                   < TextField id="outlined-basic"  variant="outlined" label="Account Name" type="text"  value={this.state.Account_Name} onChange={this.handleusernameE} required />
                 </Col>
 
-                <Col className='col-1'>
+                <Col className='col-3'>
                   < TextField id="outlined-basic"  variant="outlined" label="Vendor Name" input type="text"  value={this.state.Vendor_Name} onChange={this.handleusernameF} required />
                 </Col>
         </Row>
 
 
           <Row className="w-100 p-3" >
-                <Col className='col-1'>
+                <Col className='col-3'>
                   <TextField id="outlined-basic"  variant="outlined" label="Email" input type="email"  value={this.state.Email} onChange={this.handleusernameG} required />
                 </Col>
 
-                <Col className='col-1'>
+                <Col className='col-3'>
                   < TextField id="outlined-basic"  variant="outlined" label="Title" input type="text"  value={this.state.Title} onChange={this.handleusernameH} required />
 
                 </Col>            
@@ -425,11 +425,11 @@ export default class Newcontact extends Component {
 
           <Row className="w-100 p-3" >
 
-                <Col className='col-1'>
+                <Col className='col-3'>
                   < TextField id="outlined-basic"  variant="outlined" label="Phone" input type="number"  value={this.state.Phone} onChange={this.handleusernameI} required />
                 </Col>
 
-                <Col className='col-1'>
+                <Col className='col-3'>
                   < TextField id="outlined-basic"  variant="outlined" label="Department" input type="text" value={this.state.Department} onChange={this.handleusernameJ} required />
                 </Col>
            </Row>
@@ -437,13 +437,13 @@ export default class Newcontact extends Component {
 
            <Row className="w-100 p-3" >
 
-                <Col className='col-1'>
+                <Col className='col-3'>
 
                   <TextField id="outlined-basic"  variant="outlined" label="Other Phone" input type="number" value={this.state.Other_Phone} onChange={this.handleusernameK} required />
 
                 </Col>
 
-                <Col className='col-1'>
+                <Col className='col-3'>
                   < TextField id="outlined-basic"  variant="outlined" label="Home Phone" input type="number" value={this.state.Home_Phone} onChange={this.handleusernameL} required />
 
                 </Col>
@@ -451,13 +451,13 @@ export default class Newcontact extends Component {
 
            <Row className="w-100 p-3" >
 
-                <Col className='col-1'>
+                <Col className='col-3'>
 
                   < TextField id="outlined-basic"  variant="outlined" label="Mobile No" input type="number"  value={this.state.Mobile} onChange={this.handleusernameM} required />
 
                 </Col>
 
-                <Col className='col-1'>
+                <Col className='col-3'>
                   < TextField id="outlined-basic"  variant="outlined" label="Fax" input type="text"  value={this.state.Fax} onChange={this.handleusernameN} required />
 
                 </Col>
@@ -465,13 +465,13 @@ export default class Newcontact extends Component {
 
       <Row className="w-100 p-3" >
 
-                <Col className='col-1'>
+                <Col className='col-3'>
 
                   < TextField id="outlined-basic"  variant="outlined" label="Assistant" input type="text" value={this.state.Assistant} onChange={this.handleusernameO} required />
 
                 </Col>
 
-                <Col className='col-1'>
+                <Col className='col-3'>
                   <TextField id="outlined-basic"  variant="outlined" label="Date Of Birth" input type="text"  value={this.state.Date_of_Birth} onChange={this.handleusernameP} required />
 
                 </Col>
@@ -481,13 +481,13 @@ export default class Newcontact extends Component {
 
           <Row className="w-100 p-3" >
 
-                <Col className='col-1'>
+                <Col className='col-3'>
 
                   < TextField id="outlined-basic"  variant="outlined" label="Assistant Phone" input type="number"  value={this.state.Asst_Phone} onChange={this.handleusernameQ} required />
 
                 </Col>
 
-                <Col className='col-1'>
+                <Col className='col-3'>
                   < TextField id="outlined-basic"  variant="outlined" label="Email Opt Out " input type="email"  value={this.state.Email_opt_out} onChange={this.handleusernameR} required />
 
                 </Col>
@@ -495,13 +495,13 @@ export default class Newcontact extends Component {
 
           <Row className="w-100 p-3" >
 
-                <Col className='col-1'>
+                <Col className='col-3'>
 
                   <TextField id="outlined-basic"  variant="outlined" label="Skype ID" input type="text"  value={this.state.Skype_ID} onChange={this.handleusernameS} required />
 
                 </Col>
 
-                <Col className='col-1'>
+                <Col className='col-3'>
                   < TextField id="outlined-basic"  variant="outlined"  label="Secondary Email" input type="email"  value={this.state.Secondary_Email} onChange={this.handleusernameT} required />
 
                 </Col>
@@ -511,13 +511,13 @@ export default class Newcontact extends Component {
  
             <Row className="w-100 p-3" >
 
-                <Col className='col-1'>
+                <Col className='col-3'>
 
                   < TextField id="outlined-basic"  variant="outlined"  label="Twitter" input type="text"  value={this.state.Twitter} onChange={this.handleusernameU} required />
 
                 </Col>
 
-                <Col className='col-1'>
+                <Col className='col-3'>
                   < TextField id="outlined-basic"  variant="outlined"  label="Reporting To" input type="text"  value={this.state.Reporting_to} onChange={this.handleusernameV} required />
 
                 </Col>
@@ -529,12 +529,12 @@ export default class Newcontact extends Component {
 
                 <Row className="w-100 p-3" >
 
-                  <Col className='col-1'>
+                  <Col className='col-3'>
 
                     <TextField id="outlined-basic"  variant="outlined"  label="Mailing State" input type="text"  value={this.state.Mailing_street} onChange={this.handleusernameW} required />
                   </Col>
 
-                  <Col className='col-1'>
+                  <Col className='col-3'>
                     <TextField id="outlined-basic"  variant="outlined"  label="Other State" input type="text"  value={this.state.Other_street} onChange={this.handleusernameX} required />
                   </Col>
 
@@ -542,12 +542,12 @@ export default class Newcontact extends Component {
 
                 <Row className="w-100 p-3" >
 
-                  <Col className='col-1'>
+                  <Col className='col-3'>
 
                     <TextField id="outlined-basic"  variant="outlined"  label="Mailing City" input type="text"  value={this.state.Mailing_city} onChange={this.handleusernameY} required />
                   </Col>
 
-                  <Col className='col-1'>
+                  <Col className='col-3'>
                     <TextField id="outlined-basic"  variant="outlined"  label="Other City" input type="text"  value={this.state.Other_City} onChange={this.handleusernameZ} required />
                   </Col>
 
@@ -555,12 +555,12 @@ export default class Newcontact extends Component {
 
                 <Row className="w-100 p-3" >
 
-                  <Col className='col-1'>
+                  <Col className='col-3'>
 
                     <TextField id="outlined-basic"  variant="outlined"  label="Mailing State" input type="text"  value={this.state.Mailing_State} onChange={this.handleusernameAA} required />
                   </Col>
 
-                  <Col className='col-1'>
+                  <Col className='col-3'>
                     <TextField id="outlined-basic"  variant="outlined"  label="Other State" input type="text"  value={this.state.Other_State} onChange={this.handleusernameAB} required />
                   </Col>
 
@@ -569,12 +569,12 @@ export default class Newcontact extends Component {
 
                 <Row className="w-100 p-3" >
 
-                  <Col className='col-1'>
+                  <Col className='col-3'>
 
                     <TextField id="outlined-basic"  variant="outlined"  label="Mailing Zip" input type="number"  value={this.state.Mailing_Zip} onChange={this.handleusernameAC} required />
                   </Col>
 
-                  <Col className='col-1'>
+                  <Col className='col-3'>
                     <TextField id="outlined-basic"  variant="outlined"  label="Other Zip" input type="number"  value={this.state.Other_Zip} onChange={this.handleusernameAD} required />
                   </Col>
 
@@ -583,12 +583,12 @@ export default class Newcontact extends Component {
 
                 <Row className="w-100 p-3" >
 
-                  <Col className='col-1'>
+                  <Col className='col-3'>
 
                     <TextField id="outlined-basic"  variant="outlined"  label="Mailing Country" input type="text"  value={this.state.Mailing_Country} onChange={this.handleusernameAE} required />
                   </Col>
 
-                  <Col className='col-1'>
+                  <Col className='col-3'>
                     <TextField id="outlined-basic"  variant="outlined"  label="Other Country" input type="text" value={this.state.Other_Country} onChange={this.handleusernameAF} required />
                   </Col>
 
@@ -597,7 +597,7 @@ export default class Newcontact extends Component {
 <h3 className="text-primary">Description</h3>
 
                 <Row>
-                  <Col className='col-2' >
+                  <Col className='col-3' >
 
                     <TextField id="outlined-basic"  variant="outlined" 
                      label="Describe Here !" input type='text'  value={this.state.Description} onChange={this.handleusernameAG} />

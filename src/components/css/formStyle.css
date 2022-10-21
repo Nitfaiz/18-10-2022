@@ -769,7 +769,7 @@ h2 {
 
 
 .row{
-    width: 350%;
+    /* width: 350%; */
     display: flex;
     flex-direction: row;
 
@@ -863,5 +863,8 @@ h2 {
 
 
 .problem{
-    width:80%;
+    width:-16%;
 }
+
+
+
