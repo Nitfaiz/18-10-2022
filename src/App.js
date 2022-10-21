@@ -44,7 +44,7 @@ function App() {
 
           {/* <Route path="/form" element={<Forms />} /> */}
 
-          <Route path="/sales/customer" element={<ContactForm />} />
+          <Route path="/sales/newcontact" element={<Newcontact />} />
 
 
           <Route path="*" element={isUserLogin ? "not found" : <Login />} />

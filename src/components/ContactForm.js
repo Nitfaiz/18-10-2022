@@ -8,11 +8,11 @@ function ContactForm() {
   
   return (
 
-    <Form>
+    <Form >
       <h3 className="text-primary">Contact Information</h3>
 <Row>
       
-<Row  className="w-100 p-3" >
+<Row className="w-100 p-3"  >
       <Col className='col-1'>
             <Form.Control input type= "text" placeholder="Contact Owner" required />
       </Col>

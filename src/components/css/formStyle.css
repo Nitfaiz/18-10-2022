@@ -808,7 +808,8 @@ h2 {
     z-index: 1;
     transform: translate(14px, 20px) scale(1);
     pointer-events: none;
-    margin-top: 5px;
+    margin-top: -5px;
+    background-color: white;
 }
 
 
@@ -823,6 +824,44 @@ h2 {
     min-width: 0;
     flex-direction: column;
     vertical-align: top;
-    width: 232px;
+    /* width: 232px; */
 }
 
+
+.active {
+    border-right: 4px solid white;
+    background: rgb(45, 51, 89);
+    text-decoration: none;
+}
+
+.menu_container .link {
+    padding-left: 20px;
+    border-bottom: #fff 0.5px solid;
+    text-decoration: none;
+}
+.link{
+    text-decoration: none;
+}
+
+
+.col-1 {
+    flex: 0 0 auto;
+    width: 8.33333333%;
+    margin-top: 5px;
+    margin-left: -11px;
+}
+
+.row {
+    /* width: 750%; */
+    /* width: 350%; */
+    display: flex;
+    flex-direction: row;
+    margin-top: 5px;
+}
+
+
+
+
+.problem{
+    width:80%;
+}

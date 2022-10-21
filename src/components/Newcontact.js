@@ -7,6 +7,9 @@ import Row from 'react-bootstrap/Row';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import TextField from "@material-ui/core/TextField";
 
+
+
+
 export default class Newcontact extends Component {
 
   constructor(props) {
@@ -362,7 +365,7 @@ export default class Newcontact extends Component {
 
 
 
-<Form onSubmit={this.handlesubmit}>
+<Form className='problem' onSubmit={this.handlesubmit}>
 
      <Row>
               <h3 className="text-primary">Contact Information</h3>
@@ -545,7 +548,7 @@ export default class Newcontact extends Component {
                   </Col>
 
                   <Col className='col-1'>
-                    <TextField id="outlined-basic"  variant="outlined"  label="Other State" input type="text"  value={this.state.Other_City} onChange={this.handleusernameZ} required />
+                    <TextField id="outlined-basic"  variant="outlined"  label="Other City" input type="text"  value={this.state.Other_City} onChange={this.handleusernameZ} required />
                   </Col>
 
                 </Row>
@@ -596,7 +599,8 @@ export default class Newcontact extends Component {
                 <Row>
                   <Col className='col-2' >
 
-                    <TextField id="outlined-basic"  variant="outlined"  label="Describe Here !" input type='text'  value={this.state.Description} onChange={this.handleusernameAG} />
+                    <TextField id="outlined-basic"  variant="outlined" 
+                     label="Describe Here !" input type='text'  value={this.state.Description} onChange={this.handleusernameAG} />
 
                   </Col>
                 </Row>
