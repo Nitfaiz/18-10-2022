@@ -102,7 +102,7 @@ class Login extends Component {
                             {/* <Link to="/Dashboard">Dashboards</Link> */}
                         </div>
                     </form>
-                </div> : <Navigate to="/dashboard" />}
+                </div> : <Navigate to="/Sidebar" />}
 
 
             </div>

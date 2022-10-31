@@ -17,6 +17,16 @@ import Login from "./components/Login";
 import Signup from "./components/Signup";
 import "./components/css/formStyle.css";
 import Newcontact from "./components/Newcontact";
+import LogedinData from  "./Fetchdata.js/LogedinData";
+import Formdata from './Fetchdata.js/Formdata';
+
+
+// import formdata1 from './Fetchdata.js/Formdata1';
+// import Formdata1 from "./Fetchdata.js/Formdata1";
+
+
+
+
 // import Forms from "./components/Form";
 function App() {
   const [isUserLogin, setUserLogin] = useState(localStorage.getItem("isLogin") == "true" ? true : false);
@@ -24,12 +34,19 @@ function App() {
     const isLogin = localStorage.getItem("isLogin") == "true" ? true : false;
     setUserLogin(isLogin)
   }, localStorage.getItem("isLogin"))
+
+
+  
   return (
     <div style={{display: isUserLogin ? "flex" : "grid"}}>
       <Router>
         { isUserLogin && <SideBar />}
         <Routes>
-          <Route path="/dashboard" element={<Dashboard />} />
+        <Route path="/" element={<Login/>} />
+
+          {/* <Route path="/dashboard" element={<Dashboard />} /> */}
+          {/* <Route path="/sidebar" element={<SideBar />} /> */}
+
           <Route path="/login" element={<Login />} />
           <Route path="/signup" element={<Signup />} />
           <Route path="/users" element={<Users />} />
@@ -40,6 +57,12 @@ function App() {
           <Route path="/saved" element={<Saved />} />
           <Route path="/settings" element={<Setting />} />
           <Route path="/newcontact" element={<Newcontact />} />
+          <Route exact path = '/logedindata' element = {<LogedinData/>}/>
+      <Route exact path = '/formdata' element = {<Formdata/>}/>
+      
+      {/* <Route exact path = '/formdata1' element = {<Formdata1/>}/> */}
+
+
 
 
           {/* <Route path="/form" element={<Forms />} /> */}
@@ -48,6 +71,7 @@ function App() {
 
 
           <Route path="*" element={isUserLogin ? "not found" : <Login />} />
+
         </Routes>
 
       </Router>
